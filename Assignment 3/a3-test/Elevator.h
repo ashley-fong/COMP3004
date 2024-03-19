@@ -32,14 +32,6 @@ public:
     bool overload(int totalWeight);
     void helpButton(ElevatorControlSystem* owner, Passenger* p);
 
-    int detectLocation();
-
-    bool detectObstructed();
-    //detectObstructed returns the obstructed variable
-
-    bool detectOverloaded();
-    //detectOverloaded returns the overloaded variable
-
 
 private:
     int destReqs[7];

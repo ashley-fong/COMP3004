@@ -134,21 +134,6 @@ int Elevator::getReqSize(){
     return reqSize;
 }
 
-int Elevator::detectLocation(){
-    //detectLocation() represents the elevator signalling its sensor to get its location
-
-    qInfo("Elevator %d detecting location", this->elevNum);
-    return this->currFloor;
-}
-
-bool Elevator::detectObstructed(){
-    //detectObstructed() represents the elevator signalling its light sensor to detect obstructions
-
-    if(this->obstructed){
-        qInfo("Elevator %d detecting obstruction", this->elevNum);
-    }
-    return this->obstructed;
-}
 
 bool Elevator::overload(int totalWeight){
 
